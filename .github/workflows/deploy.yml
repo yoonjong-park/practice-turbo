@@ -18,17 +18,17 @@ jobs:
         uses: cloudtype-github-actions/deploy@v1
         with:
           token: ${{ secrets.CLOUDTYPE_TOKEN }}
-          project: yoonjongpark/gitlab-group
+          project: yoonjongpark/react-test-company
           stage: main
           yaml: |
-            name: practice-turbo
+            name: practice-turbo-testing
             app: node@16
             options:
               env:
                 - name: NODE_ENV
                   value: production
               ports: 3000
-              build: yarn build:web
+              build: yarn build
             context:
               git:
                 url: git@github.com:${{ github.repository }}.git
