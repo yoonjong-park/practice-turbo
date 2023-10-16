@@ -28,7 +28,7 @@ jobs:
                 - name: NODE_ENV
                   value: production
               ports: 3000
-              build: yarn build
+              build: yarn build:web
             context:
               git:
                 url: git@github.com:${{ github.repository }}.git
