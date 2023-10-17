@@ -21,7 +21,7 @@ jobs:
           project: yoonjongpark/react-test-company
           stage: main
           yaml: |
-            name: practice-turbo-testing
+            name: testing
             app: node@16
             options:
               env:
